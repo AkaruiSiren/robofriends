@@ -16,7 +16,7 @@ class App extends Component {
 	}
 
 	componentDidMount() { //prebuild componentDidMount method
-		fetch('http://jsonplaceholder.typicode.com/users')
+		fetch('https://jsonplaceholder.typicode.com/users')
 			.then(response => response.json())
 			.then(users => this.setState({robots: users}));
 		//this.setState({robots: robots})
